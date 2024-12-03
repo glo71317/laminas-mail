@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4978b91945a011f86a8144dc01230fd8",
+    "content-hash": "268e7b7399199908cd075e8b073e5e38",
     "packages": [
         {
             "name": "laminas/laminas-loader",
@@ -65,21 +65,21 @@
         },
         {
             "name": "laminas/laminas-mime",
-            "version": "2.12.0",
+            "version": "dev-php8.4_support",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laminas/laminas-mime.git",
-                "reference": "08cc544778829b7d68d27a097885bd6e7130135e"
+                "url": "https://github.com/glo71317/laminas-mime.git",
+                "reference": "0fe56bb257e11fdfe2fca298ec360646b1ff0815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-mime/zipball/08cc544778829b7d68d27a097885bd6e7130135e",
-                "reference": "08cc544778829b7d68d27a097885bd6e7130135e",
+                "url": "https://api.github.com/repos/glo71317/laminas-mime/zipball/0fe56bb257e11fdfe2fca298ec360646b1ff0815",
+                "reference": "0fe56bb257e11fdfe2fca298ec360646b1ff0815",
                 "shasum": ""
             },
             "require": {
                 "laminas/laminas-stdlib": "^2.7 || ^3.0",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "conflict": {
                 "zendframework/zend-mime": "*"
@@ -98,7 +98,32 @@
                     "Laminas\\Mime\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "files": [
+                    "test/TestAsset/Mail/Headers.php"
+                ],
+                "psr-4": {
+                    "LaminasTest\\Mime\\": "test/"
+                }
+            },
+            "scripts": {
+                "check": [
+                    "@cs-check",
+                    "@test"
+                ],
+                "cs-check": [
+                    "phpcs"
+                ],
+                "cs-fix": [
+                    "phpcbf"
+                ],
+                "test": [
+                    "phpunit --colors=always"
+                ],
+                "test-coverage": [
+                    "phpunit --colors=always --coverage-clover clover.xml"
+                ]
+            },
             "license": [
                 "BSD-3-Clause"
             ],
@@ -109,21 +134,15 @@
                 "mime"
             ],
             "support": {
-                "chat": "https://laminas.dev/chat",
                 "docs": "https://docs.laminas.dev/laminas-mime/",
-                "forum": "https://discourse.laminas.dev",
                 "issues": "https://github.com/laminas/laminas-mime/issues",
+                "source": "https://github.com/laminas/laminas-mime",
                 "rss": "https://github.com/laminas/laminas-mime/releases.atom",
-                "source": "https://github.com/laminas/laminas-mime"
+                "chat": "https://laminas.dev/chat",
+                "forum": "https://discourse.laminas.dev"
             },
-            "funding": [
-                {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
-                }
-            ],
             "abandoned": "symfony/mime",
-            "time": "2023-11-02T16:47:19+00:00"
+            "time": "2024-12-03T07:32:25+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
@@ -4606,7 +4625,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "laminas/laminas-mime": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
