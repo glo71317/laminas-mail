@@ -1,0 +1,30 @@
+{
+    "templateVersion": "0.2",
+    "product": {
+        "name": "Laminas-mail Package",
+        "description": "Extends capabilities of Magento Open Source making it ready."
+    },
+    "contacts": {
+        "team": {
+            "name": "HAMMER",
+            "DL": "Grp-RQ-HAMMER",
+            "slackChannel": "gl-hammer-team"
+        }
+    },
+    "ticketTracker": {
+        "functionalJiraQueue": {
+            "projectKey": "AC"
+        },
+        "securityJiraQueue": {
+            "projectKey": "MAGREQ",
+            "component": "Commerce M2"
+        }
+    },
+    "staticScan": {
+        "enable": true,
+        "frequency": "monthly",
+        "branchesToScan": [
+            "develop"
+        ]
+    }
+}
