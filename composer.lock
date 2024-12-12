@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "268e7b7399199908cd075e8b073e5e38",
+    "content-hash": "b9b7f76e60426412b07bf75e55c7d67f",
     "packages": [
         {
             "name": "laminas/laminas-loader",
@@ -65,16 +65,16 @@
         },
         {
             "name": "laminas/laminas-mime",
-            "version": "dev-php8.4_support",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/glo71317/laminas-mime.git",
-                "reference": "0fe56bb257e11fdfe2fca298ec360646b1ff0815"
+                "url": "git@github.com:magento-commerce/laminas-mime.git",
+                "reference": "bbec82c38b6654255e0b7a658f9ab640743b93d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/glo71317/laminas-mime/zipball/0fe56bb257e11fdfe2fca298ec360646b1ff0815",
-                "reference": "0fe56bb257e11fdfe2fca298ec360646b1ff0815",
+                "url": "https://api.github.com/repos/magento-commerce/laminas-mime/zipball/bbec82c38b6654255e0b7a658f9ab640743b93d9",
+                "reference": "bbec82c38b6654255e0b7a658f9ab640743b93d9",
                 "shasum": ""
             },
             "require": {
@@ -92,6 +92,7 @@
             "suggest": {
                 "laminas/laminas-mail": "Laminas\\Mail component"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -142,7 +143,7 @@
                 "forum": "https://discourse.laminas.dev"
             },
             "abandoned": "symfony/mime",
-            "time": "2024-12-03T07:32:25+00:00"
+            "time": "2024-12-11T12:04:38+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
