@@ -69,12 +69,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:magento-commerce/laminas-mime.git",
-                "reference": "bbec82c38b6654255e0b7a658f9ab640743b93d9"
+                "reference": "87289bd45136ed0c12a0dfde7b61e0f216ea9b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magento-commerce/laminas-mime/zipball/bbec82c38b6654255e0b7a658f9ab640743b93d9",
-                "reference": "bbec82c38b6654255e0b7a658f9ab640743b93d9",
+                "url": "https://api.github.com/repos/magento-commerce/laminas-mime/zipball/87289bd45136ed0c12a0dfde7b61e0f216ea9b79",
+                "reference": "87289bd45136ed0c12a0dfde7b61e0f216ea9b79",
                 "shasum": ""
             },
             "require": {
@@ -84,9 +84,12 @@
             "conflict": {
                 "zendframework/zend-mime": "*"
             },
+            "replace": {
+                "laminas/laminas-mime": "^2.12"
+            },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.4.0",
-                "laminas/laminas-mail": "^2.19.0",
+                "magento/laminas-mail": "dev-develop",
                 "phpunit/phpunit": "~9.5.25"
             },
             "suggest": {
@@ -143,7 +146,7 @@
                 "forum": "https://discourse.laminas.dev"
             },
             "abandoned": "symfony/mime",
-            "time": "2024-12-11T12:04:38+00:00"
+            "time": "2024-12-20T16:34:21+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
