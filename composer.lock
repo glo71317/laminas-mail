@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22c84633674c61ba0974c68d22716a9e",
+    "content-hash": "fe7d8414bf1a9f074165f3a9b5b7f462",
     "packages": [
         {
             "name": "laminas/laminas-loader",
@@ -62,91 +62,6 @@
             ],
             "abandoned": true,
             "time": "2024-12-05T14:43:32+00:00"
-        },
-        {
-            "name": "laminas/laminas-mime",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:magento-commerce/laminas-mime.git",
-                "reference": "87289bd45136ed0c12a0dfde7b61e0f216ea9b79"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/magento-commerce/laminas-mime/zipball/87289bd45136ed0c12a0dfde7b61e0f216ea9b79",
-                "reference": "87289bd45136ed0c12a0dfde7b61e0f216ea9b79",
-                "shasum": ""
-            },
-            "require": {
-                "laminas/laminas-stdlib": "^2.7 || ^3.0",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
-            },
-            "conflict": {
-                "zendframework/zend-mime": "*"
-            },
-            "replace": {
-                "laminas/laminas-mime": "^2.12"
-            },
-            "require-dev": {
-                "laminas/laminas-coding-standard": "~2.4.0",
-                "magento/laminas-mail": "dev-develop",
-                "phpunit/phpunit": "~9.5.25"
-            },
-            "suggest": {
-                "laminas/laminas-mail": "Laminas\\Mail component"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Laminas\\Mime\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "files": [
-                    "test/TestAsset/Mail/Headers.php"
-                ],
-                "psr-4": {
-                    "LaminasTest\\Mime\\": "test/"
-                }
-            },
-            "scripts": {
-                "check": [
-                    "@cs-check",
-                    "@test"
-                ],
-                "cs-check": [
-                    "phpcs"
-                ],
-                "cs-fix": [
-                    "phpcbf"
-                ],
-                "test": [
-                    "phpunit --colors=always"
-                ],
-                "test-coverage": [
-                    "phpunit --colors=always --coverage-clover clover.xml"
-                ]
-            },
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Create and parse MIME messages and parts",
-            "homepage": "https://laminas.dev",
-            "keywords": [
-                "laminas",
-                "mime"
-            ],
-            "support": {
-                "docs": "https://docs.laminas.dev/laminas-mime/",
-                "issues": "https://github.com/laminas/laminas-mime/issues",
-                "source": "https://github.com/laminas/laminas-mime",
-                "rss": "https://github.com/laminas/laminas-mime/releases.atom",
-                "chat": "https://laminas.dev/chat",
-                "forum": "https://discourse.laminas.dev"
-            },
-            "abandoned": "symfony/mime",
-            "time": "2024-12-20T16:34:21+00:00"
         },
         {
             "name": "laminas/laminas-servicemanager",
@@ -380,6 +295,91 @@
                 }
             ],
             "time": "2024-11-26T21:29:17+00:00"
+        },
+        {
+            "name": "magento/laminas-mime",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:magento-commerce/laminas-mime.git",
+                "reference": "e7460eed8cad8c583b50e1cf90c9c96ad9ce2907"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/magento-commerce/laminas-mime/zipball/e7460eed8cad8c583b50e1cf90c9c96ad9ce2907",
+                "reference": "e7460eed8cad8c583b50e1cf90c9c96ad9ce2907",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-stdlib": "^2.7 || ^3.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "conflict": {
+                "zendframework/zend-mime": "*"
+            },
+            "replace": {
+                "laminas/laminas-mime": "^2.12"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~2.4.0",
+                "magento/laminas-mail": "dev-develop",
+                "phpunit/phpunit": "~9.5.25"
+            },
+            "suggest": {
+                "laminas/laminas-mail": "Laminas\\Mail component"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Laminas\\Mime\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "files": [
+                    "test/TestAsset/Mail/Headers.php"
+                ],
+                "psr-4": {
+                    "LaminasTest\\Mime\\": "test/"
+                }
+            },
+            "scripts": {
+                "check": [
+                    "@cs-check",
+                    "@test"
+                ],
+                "cs-check": [
+                    "phpcs"
+                ],
+                "cs-fix": [
+                    "phpcbf"
+                ],
+                "test": [
+                    "phpunit --colors=always"
+                ],
+                "test-coverage": [
+                    "phpunit --colors=always --coverage-clover clover.xml"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Create and parse MIME messages and parts",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "laminas",
+                "mime"
+            ],
+            "support": {
+                "docs": "https://docs.laminas.dev/laminas-mime/",
+                "issues": "https://github.com/laminas/laminas-mime/issues",
+                "source": "https://github.com/laminas/laminas-mime",
+                "rss": "https://github.com/laminas/laminas-mime/releases.atom",
+                "chat": "https://laminas.dev/chat",
+                "forum": "https://discourse.laminas.dev"
+            },
+            "abandoned": "symfony/mime",
+            "time": "2024-12-23T09:46:50+00:00"
         },
         {
             "name": "psr/container",
@@ -2463,16 +2463,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.39",
+            "version": "10.5.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4e89eff200b801db58f3d580ad7426431949eaa9"
+                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4e89eff200b801db58f3d580ad7426431949eaa9",
-                "reference": "4e89eff200b801db58f3d580ad7426431949eaa9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/e6ddda95af52f69c1e0c7b4f977cccb58048798c",
+                "reference": "e6ddda95af52f69c1e0c7b4f977cccb58048798c",
                 "shasum": ""
             },
             "require": {
@@ -2544,7 +2544,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.39"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.40"
             },
             "funding": [
                 {
@@ -2560,7 +2560,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-11T10:51:07+00:00"
+            "time": "2024-12-21T05:49:06+00:00"
         },
         {
             "name": "psalm/plugin-phpunit",
@@ -4630,7 +4630,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "laminas/laminas-mime": 20
+        "magento/laminas-mime": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
