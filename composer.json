@@ -8,17 +8,11 @@
     "homepage": "https://laminas.dev",
     "abandoned": "symfony/mailer",
     "license": "BSD-3-Clause",
-    "repositories": [
-        {
-            "type" : "vcs",
-            "url" : "git@github.com:magento-commerce/laminas-mime.git"
-        }
-    ],
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "ext-iconv": "*",
         "laminas/laminas-loader": "^2.9.0",
-        "magento/laminas-mime": "dev-develop",
+        "magento/laminas-mime": "^1.0.0",
         "laminas/laminas-stdlib": "^3.17.0",
         "laminas/laminas-validator": "^2.31.0",
         "symfony/polyfill-mbstring": "^1.27.0",
